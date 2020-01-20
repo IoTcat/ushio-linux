@@ -6417,3 +6417,8 @@
 2020-01-20T22:12:08: PM2 log: pid=27287 msg=process killed
 2020-01-20T22:12:08: PM2 log: App [cron-git:0] starting in -fork mode-
 2020-01-20T22:12:08: PM2 log: App [cron-git:0] online
+2020-01-20T23:36:33: PM2 log: Stopping app:cron-git id:0
+2020-01-20T23:36:33: PM2 log: App [cron-git:0] exited with code [0] via signal [SIGINT]
+2020-01-20T23:36:33: PM2 log: pid=27300 msg=process killed
+2020-01-20T23:36:33: PM2 log: App [cron-git:0] starting in -fork mode-
+2020-01-20T23:36:33: PM2 log: App [cron-git:0] online
