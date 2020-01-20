@@ -4,3 +4,4 @@ mnt/*
 .bash_history
 .pm2
 .pnpm
+.npm
