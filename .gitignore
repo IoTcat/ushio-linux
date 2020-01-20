@@ -8,3 +8,4 @@ mnt/*
 .pki
 .config
 .gitconfig
+.git-credentials
