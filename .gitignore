@@ -2,3 +2,4 @@ mnt/*
 /var/tmp/*
 /var/log/*
 .bash_history
+.pm2
