@@ -6,3 +6,4 @@ mnt/*
 .pnpm
 .npm
 .pki
+.config
