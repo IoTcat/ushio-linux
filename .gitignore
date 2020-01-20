@@ -3,7 +3,6 @@ mnt/*
 /var/log/*
 .bash_history
 .pm2
-.pnpm
 .npm
 .pki
 .config
