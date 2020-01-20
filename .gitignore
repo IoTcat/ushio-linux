@@ -9,3 +9,4 @@ mnt/*
 .config
 .gitconfig
 .git-credentials
+.bash_history
