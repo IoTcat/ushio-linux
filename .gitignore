@@ -7,3 +7,4 @@ mnt/*
 .npm
 .pki
 .config
+.gitconfig
