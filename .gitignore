@@ -2,9 +2,9 @@ mnt/*
 /var/tmp/*
 /var/log/*
 .bash_history
-.pm2
-.npm
-.pki
+.pm2/
+.npm/
+.pki/
 .config
 .gitconfig
 .git-credentials
