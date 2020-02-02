@@ -1,3 +1,3 @@
-[submodule "etc/nginx"]
-	path = etc/nginx
-	url = https://github.com/iotcat/ushio-nginx
+[submodule "etc"]
+	path = etc
+	url = https://github.com/iotcat/ushio-etc.git
