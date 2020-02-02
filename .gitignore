@@ -10,3 +10,5 @@ mnt/*
 .git-credentials
 .bash_history
 *.swp
+etc/
+etcc
