@@ -13,3 +13,7 @@ mnt/*
 etc/
 etcc
 .viminfo
+.zsh_history
+.oh-my-zsh
+.zcompdump-uk-5.0.2
+.shell.pre-oh-my-zsh
