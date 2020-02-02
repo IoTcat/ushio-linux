@@ -8,11 +8,17 @@ set magic
 set title
 set nobackup
 set noerrorbells "no bell
+set laststatus=2
 set visualbell t_vb=
 set timeoutlen=500 "wait for pending
 set nowb
 set noswapfile
+set confirm
 
+"folder
+set foldenable
+set fdm=syntax
+nnoremap <space> @=((foldclosed(line('.')<0)?'zc':'zo'))<CR>
 
 "decode
 set encoding=utf-8  
