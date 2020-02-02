@@ -1,7 +1,18 @@
-set ts=4
-set sw=4
-set expandtab autoindent
-syntax on
+"vim conf for iotcat (https://iotcat.me)
+
+"general
+set nocompatible
+set autoread
+set shortmess=atI
+set magic
+set title
+set nobackup
+set noerrorbells "no bell
+set visualbell t_vb=
+set timeoutlen=500 "wait for pending
+set nowb
+set noswapfile
+
 
 "decode
 set encoding=utf-8  
@@ -12,6 +23,8 @@ set formatoptions+=m
 set formatoptions+=B
 
 "display
+colorscheme default
+syntax on
 set ruler
 set number
 set nowrap
@@ -31,9 +44,6 @@ set smartcase
 set expandtab
 set smarttab
 set shiftround
-
-
-"auto tab
 set autoindent smartindent shiftround
 set shiftwidth=4
 set tabstop=4
@@ -54,38 +64,4 @@ autocmd FileType python set tabstop=4 shiftwidth=4 expandtab ai
 autocmd FileType ruby set tabstop=2 shiftwidth=2 softtabstop=2 expandtab ai
 autocmd BufRead,BufNew *.md,*.mkd,*.markdown set filetype=markdown.mkd
 
-autocmd BufNewFile *.sh,*.py exec \":call AutoSetFileHead()\"
-function! AutoSetFileHead()
-    " .sh "" .sh "
-    if &filetype == 'sh'
-        call setline(1, "\#!/bin/bash")
-    endif
 
-    " python "
-    if &filetype == 'python'
-        call setline(1, "\#!/usr/bin/env python")
-        call append(1, "\# encoding: utf-8")
-    endif
-
-    normal G
-    normal o
-    normal o
-endfunc
-
-autocmd FileType c,cpp,java,go,php,javascript,puppet,python,rust,twig,xml,yml,perl autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
-fun! <SID>StripTrailingWhitespaces()
-    let l = line(".")
-    let c = col(".")
-    %s/\s\+$//e
-    call cursor(l, c)
-endfun
-
-
-set nu
-set showmatch
-
-set nobackup
-set nowb
-set noswapfile
-
-colorscheme default
